@@ -1,378 +1,328 @@
-*
-{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.h1-index, .h1-shop
-{
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
+.h1-index,
+.h1-shop {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
 }
 
-.h1-a
-{
-    text-decoration: none;
-    color: #ff7f27;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.h1-a {
+  text-decoration: none;
+  color: #ff7f27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-index
-{
-    width: 92%;
-    /* background-color: #000; */
-    margin-left: 4%;
-    border-radius: 15px;
-    padding-bottom: 20px;
+.header-index {
+  width: 92%;
+  /* background-color: #000; */
+  margin-left: 4%;
+  border-radius: 15px;
+  padding-bottom: 20px;
 }
 
-.header-index nav
-{
-    /* background-color: #ff7f27; */
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+.header-index nav {
+  /* background-color: #ff7f27; */
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
-.header-index nav a
-{
-    text-decoration: none;
-    color: #000; 
-    display: flex;
-    align-items: center;
+.header-index nav a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
-
-.header-index nav .current-page a
-{
-    color: #FFF; 
+.header-index nav .current-page a {
+  color: #fff;
 }
 
-.header-index nav ul
-{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+.header-index nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
-.header-index nav ul li
-{
-    margin: 7px;
-    padding: 2px 10px;
-    border-radius: 5px;
+.header-index nav ul li {
+  margin: 7px;
+  padding: 2px 10px;
+  border-radius: 5px;
 }
 
-.current-page 
-{
-    background-color: #ff7f27; 
+.current-page {
+  background-color: #ff7f27;
 }
 
-.info-index
-{
-    display: flex;
+.info-index {
+  display: flex;
 }
-.info-index img
-{
-    margin: 75px 50px 0 0;
+.info-index img {
+  margin: 75px 50px 0 0;
 }
-object
-{
-    margin: 50px 50px 0 0;
+object {
+  margin: 50px 50px 0 0;
 }
-.detail-info-index
-{
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 50px;
+.detail-info-index {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
 }
 
-.justify-index
-{
-    text-align: justify;
-    margin-bottom: 30px;
-    font-size: 1.2em;
+.justify-index {
+  text-align: justify;
+  margin-bottom: 30px;
+  font-size: 1.2em;
 }
 
-.contact-index
-{
-    text-decoration: none;
-    color: #fff;  
-    background-color: #ff7f27; 
-    padding: 3px 10px;
-    border-radius: 5px;
-    
+.contact-index {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff7f27;
+  padding: 3px 10px;
+  border-radius: 5px;
 }
-.contact-index:hover
-{
-    background-color: #ffa60066;
-    color: #000;
-    transition: 1s;
+.contact-index:hover {
+  background-color: #ffa60066;
+  color: #000;
+  transition: 1s;
 }
-h2
-{
-    margin: 15px 0;
-    /* color: #ff7f27;  */
-    font-size: 2em;
+h2 {
+  margin: 15px 0;
+  /* color: #ff7f27;  */
+  font-size: 2em;
 }
 
-.main-index h2
-{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+.main-index h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
 
-#Products
-{
-    background-color: #0000009d; 
-    width: 200px;
-    margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 15px 10px 40px 10px;
+#Products {
+  background-color: #0000009d;
+  width: 200px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 10px 40px 10px;
 }
 
-#latest-products
-{
-    display: flex;
-    flex-wrap: wrap;
-    width: 92%;
-    /* background-color: #000;  */
-    margin-left: 4%;
-    justify-content: center;
-    border-radius: 15px;
+#latest-products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  /* background-color: #000;  */
+  margin-left: 4%;
+  justify-content: center;
+  border-radius: 15px;
 }
 
-#latest-products img
-{
-    width: 200px;
-    margin-bottom: 50px;
+#latest-products img {
+  width: 200px;
+  margin-bottom: 50px;
 }
 
-.left-product
-{
-    position: absolute;
-    padding-left: 15px;
-    color: #fff; 
+.left-product {
+  position: absolute;
+  padding-left: 15px;
+  color: #fff;
 }
 
-.right-price
-{
-    color: #000; 
-    background-color: #ffa600b5;
-    margin: 0 10px 0 150px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 3px 3px 5px #ff7f27;
-    padding: 2px 25px;
+.right-price {
+  color: #000;
+  background-color: #ff9d00b5;
+  margin: 0 10px 0 150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #ff7f27;
+  padding: 2px 25px;
 }
 
-.all-product
-{
-    text-decoration: none;
-    color: #000; 
-    display: flex;
-    justify-content: center;
-    background-color: #ff7f27; 
-    color: #fff;
-    width: 150px;
-    margin: 30px auto;
-    padding: 5px 20px;
-    border-radius: 5px;
-    font-size: 1.2em;
+.all-product {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  background-color: #ff7f27;
+  color: #fff;
+  width: 150px;
+  margin: 30px auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
 }
-.all-product:hover
-{
-    background-color: #ffa60066;
-    color: #000;
-    transition: 1s;
+.all-product:hover {
+  background-color: #ffa60066;
+  color: #000;
+  transition: 1s;
 }
 
-.info-index2
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.info-index2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.info-index3
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ff7f27; 
-    margin: 15px;
-    width: 250px;
-    height: 125px;
-    padding-top: 25px;
+.info-index3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff7f27;
+  margin: 15px;
+  width: 250px;
+  height: 125px;
+  padding-top: 25px;
 }
-.info-index3 p
-{
-    margin-top: 20px;
+.info-index3 p {
+  margin-top: 20px;
 }
-.footer-index
-{
-    width: 92%;
-    /* background-color: #ff7f27;  */
-    border-radius: 15px;
-    padding: 10px;
-    margin: 30px auto;
+.footer-index {
+  width: 92%;
+  /* background-color: #ff7f27;  */
+  border-radius: 15px;
+  padding: 10px;
+  margin: 30px auto;
 }
 
-.footer-index ul
-{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+.footer-index ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
-.footer-index ul li
-{
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
+.footer-index ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
 }
 
-.wrap-index
-{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
+.wrap-index {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.wrap-index img
-{
-    margin-right: 5px;
+.wrap-index img {
+  margin-right: 5px;
 }
 
-.header-shop nav ul
-{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    border: 1px solid grey;
-    border-radius: 15px;
-    width: 92%;
-    margin-left: 4%;
+.header-shop nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid grey;
+  border-radius: 15px;
+  width: 92%;
+  margin-left: 4%;
 }
 
-.header-shop nav ul a
-{
-    text-decoration: none;
-    color: #000; 
-    display: flex;
-    align-items: center;
+.header-shop nav ul a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
-.header-shop nav ul li
-{
-    margin: 7px;
-    padding: 2px 10px;
-    border-radius: 5px;
+.header-shop nav ul li {
+  margin: 7px;
+  padding: 2px 10px;
+  border-radius: 5px;
 }
 
-.header-shop nav ul li:hover
-{
-    background-color: #ffa6006a; 
+.header-shop nav ul li:hover {
+  background-color: #ffa6006a;
 }
 
-.h2-product
-{
-    display: flex;
-    justify-content: center;
-    margin-top: 75px;
+.h2-product {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
 }
 
-#our-products img, #our-products2 img
-{
-    width: 200px;
-    margin-bottom: 50px;
+#our-products img,
+#our-products2 img {
+  width: 200px;
+  margin-bottom: 50px;
 }
 
-#our-products, #our-products2
-{
-    display: flex;
-    flex-wrap: wrap;
-    width: 92%;
-    /* background-color: #000;  */
-    margin-left: 4%;
-    justify-content: center;
-    border-radius: 15px;
+#our-products,
+#our-products2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  /* background-color: #000;  */
+  margin-left: 4%;
+  justify-content: center;
+  border-radius: 15px;
 }
 
-.AddCard
-{
-    position: absolute;
-    margin: 10px 0 0 12px;
-    background-color: #ff7f27;
-    padding: 2px 7px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
+.AddCard {
+  position: absolute;
+  margin: 10px 0 0 12px;
+  background-color: #ff7f27;
+  padding: 2px 7px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
 }
-.AddCard:hover
-{
-    background-color: #fda400a9;
-    color: #000;
-    transition: 1s; 
+.AddCard:hover {
+  background-color: #fda400a9;
+  color: #000;
+  transition: 1s;
 }
 
-.imgShop
-{
-    width: 100px;
+.imgShop {
+  width: 100px;
 }
 
-table
-{
-    margin: 100px auto;
+table {
+  margin: 100px auto;
 }
 
-td, th
-{
-    /* border: 1px solid black; */
-    text-align: center;
-    padding: 15px 50px;
+td,
+th {
+  /* border: 1px solid black; */
+  text-align: center;
+  padding: 15px 50px;
 }
-.imgtd
-{
-    padding-right: 0;
+.imgtd {
+  padding-right: 0;
 }
 
-.buttonSC
-{
-    margin: 0 5px;
+.buttonSC {
+  margin: 0 5px;
 }
 @media (max-width: 680px) {
-    .header-index nav ul
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-    .header-shop nav ul
-    {
-        flex-direction: column;
-        align-items: center;
-        border: none;
-    }
-    .header-index nav ul li, .header-shop nav ul li
-    {
-        margin: 7px 0;
-    }
-    .info-index
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-    object
-    {
-        margin-top: 15px;
-        margin-right: 0;
-    }
+  .header-index nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-shop nav ul {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+  .header-index nav ul li,
+  .header-shop nav ul li {
+    margin: 7px 0;
+  }
+  .info-index {
+    flex-direction: column;
+    align-items: center;
+  }
+  object {
+    margin-top: 15px;
+    margin-right: 0;
+  }
 }
