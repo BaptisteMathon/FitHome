@@ -26,7 +26,7 @@ fetch(URL)
       newTd4.innerText = data[i]["price"] * data[i]["quantity"];
       finalPrice += data[i]["price"] * data[i]["quantity"];
       let newTd5 = document.createElement("td");
-      newTd5.innerHTML = `<button onclick="AddQuantity(${data[i]["id"]}, ${data[i]["quantity"]}, ${data[i]["price"]}, '${data[i]["products"]}', '${data[i]["img"]}')" class="buttonSC" style="padding: 0 3px")">+</button><img src="Img/del.png" alt="Delete" width="20px" style="cursor:pointer;" onclick="DeleteProd(${data[i]["id"]})"><button class="buttonSC" style="padding: 0 5px" onclick="LessQuantity(${data[i]["id"]}, ${data[i]["quantity"]}, ${data[i]["price"]}, '${data[i]["products"]}', '${data[i]["img"]}')">-</button>`;
+      newTd5.innerHTML = `<button onclick="AddQuantity(${data[i]["id"]}, ${data[i]["quantity"]}, ${data[i]["price"]}, '${data[i]["products"]}', '${data[i]["img"]}', '${data[i]["stripe_price_id"]}')" class="buttonSC" style="padding: 0 3px")">+</button><img src="Img/del.png" alt="Delete" width="20px" style="cursor:pointer;" onclick="DeleteProd(${data[i]["id"]})"><button class="buttonSC" style="padding: 0 5px" onclick="LessQuantity(${data[i]["id"]}, ${data[i]["quantity"]}, ${data[i]["price"]}, '${data[i]["products"]}', '${data[i]["img"]}', '${data[i]["stripe_price_id"]}')">-</button>`;
       newTd5.style.display = "flex";
       newTd5.style.justifyContent = "center";
       newTd5.style.padding = "60px 5px";
@@ -48,7 +48,7 @@ fetch(URL)
     document.getElementById("finalPrice").innerText = finalPrice + "€";
   });
 
-function AddQuantity(id, q, price, product, img) {
+function AddQuantity(id, q, price, product, img, stripe) {
   console.log("id: " + id);
   console.log("quantity" + q);
 
@@ -61,6 +61,7 @@ function AddQuantity(id, q, price, product, img) {
       quantity: q + 1,
       img: img,
       price: price,
+      stripe_price_id: stripe,
     }),
   })
     .then(function (response) {
@@ -71,7 +72,7 @@ function AddQuantity(id, q, price, product, img) {
     });
 }
 
-function LessQuantity(id, q, price, product, img) {
+function LessQuantity(id, q, price, product, img, stripe) {
   console.log("id: " + id);
   console.log("quantity" + q);
 
@@ -85,6 +86,7 @@ function LessQuantity(id, q, price, product, img) {
         quantity: q - 1,
         img: img,
         price: price,
+        stripe_price_id: stripe,
       }),
     })
       .then(function (response) {
