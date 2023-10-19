@@ -1,102 +1,120 @@
 {
-  "SportsEquipment": [
+  "products": [
     {
       "id": 1,
       "name_product": "Fitness ball",
       "price": 20,
-      "img": "Img/ballonFit.png"
+      "img": "Img/ballonFit.png",
+      "stripe_price_id": "price_1O0h7dLum16Dv5co1Q9s0FRQ"
     },
     {
       "id": 2,
       "name_product": "Weight bar",
       "price": 25,
-      "img": "Img/BarreMuscu.png"
+      "img": "Img/BarreMuscu.png",
+      "stripe_price_id": "price_1O0h76Lum16Dv5coWXz4IWGW"
     },
     {
       "id": 3,
       "name_product": "Dumbbells",
       "price": 35,
-      "img": "Img/haltere.png"
+      "img": "Img/haltere.png",
+      "stripe_price_id": "price_1O1l70Lum16Dv5coduXwXu8H"
     },
     {
       "id": 4,
       "name_product": "Jump rope",
       "price": 10,
-      "img": "Img/CordeASaute.png"
+      "img": "Img/CordeASaute.png",
+      "stripe_price_id": "price_1O0h81Lum16Dv5coA6SQOton"
     },
     {
       "id": 5,
       "name_product": "Resistance bands",
       "price": 10,
-      "img": "Img/bandeResistance.png"
+      "img": "Img/bandeResistance.png",
+      "stripe_price_id": "price_1O1l7QLum16Dv5coIPMvDeK9"
     },
     {
       "id": 6,
       "name_product": "Yoga mat",
       "price": 25,
-      "img": "Img/Yoga.png"
+      "img": "Img/Yoga.png",
+      "stripe_price_id": "price_1O0h8sLum16Dv5coYAQXhM8l"
     },
     {
       "id": 7,
       "name_product": "Weight",
       "price": 35,
-      "img": "Img/PoidsHaltere.png"
+      "img": "Img/PoidsHaltere.png",
+      "stripe_price_id": "price_1O0h6iLum16Dv5coW4ZHNEQp"
     },
     {
       "id": 8,
       "name_product": "Boxing bag",
       "price": 50,
-      "img": "Img/SacBox.png"
-    }
-  ],
-  "ExerciseMachines": [
+      "img": "Img/SacBox.png",
+      "stripe_price_id": "price_1O1l83Lum16Dv5coY4r6iN8O"
+    },
     {
       "id": 1,
       "name_product": "Treadmill",
       "price": 900,
-      "img": "Img/machine1.png"
+      "img": "Img/machine1.png",
+      "stripe_price_id": "price_1O1l8eLum16Dv5coYJ4k3zPf"
     },
     {
       "id": 2,
       "name_product": "Exercise bike",
       "price": 500,
-      "img": "Img/machine2.png"
+      "img": "Img/machine2.png",
+      "stripe_price_id": "price_1O1l9RLum16Dv5coXmnGWYvV"
     },
     {
       "id": 3,
       "name_product": "Rowing machine",
       "price": 550,
-      "img": "Img/machine3.png"
+      "img": "Img/machine3.png",
+      "stripe_price_id": "price_1O1lAVLum16Dv5cou9z5Qlgr"
     },
     {
       "id": 4,
       "name_product": "Weightlifting ",
       "price": 1150,
-      "img": "Img/machine4.png"
+      "img": "Img/machine4.png",
+      "stripe_price_id": "price_1O1lB1Lum16Dv5coMf8VPTH2"
     },
     {
       "id": 5,
       "name_product": "Elliptical trainer",
       "price": 830,
-      "img": "Img/machine5.png"
+      "img": "Img/machine5.png",
+      "stripe": "price_1O1lF3Lum16Dv5coIdiod0wn",
+      "stripe_price_id": "price_1O1lF3Lum16Dv5coIdiod0wn"
     },
     {
       "id": 6,
       "name_product": "Smith machine",
       "price": 1100,
-      "img": "Img/machine6.png"
+      "img": "Img/machine6.png",
+      "stripe": "price_1O1lFULum16Dv5coGFhHPiy9",
+      "stripe_price_id": "price_1O1lFULum16Dv5coGFhHPiy9"
     },
     {
       "id": 7,
       "name_product": "Step climber ",
       "price": 580,
-      "img": "Img/machine7.png"
+      "img": "Img/machine7.png",
+      "stripe": "price_1O1lH2Lum16Dv5coyUzDTYtQ",
+      "stripe_price_id": "price_1O1lH2Lum16Dv5coyUzDTYtQ"
     },
     {
       "id": 8,
       "name_product": "Cable crossover ",
       "price": 2200,
-      "img": "Img/machine8.png"
+      "img": "Img/machine8.png",
+      "stripe": "price_1O1lHuLum16Dv5cofGftgYuZ",
+      "stripe_price_id": "price_1O1lHuLum16Dv5cofGftgYuZ"
     }
   ],
   "Card": [
@@ -120,6 +138,20 @@
       "quantity": 2,
       "img": "Img/machine7.png",
       "price": 580
+    },
+    {
+      "id": 4,
+      "products": "Dumbbells",
+      "quantity": 1,
+      "img": "Img/haltere.png",
+      "price": 35
+    },
+    {
+      "id": 5,
+      "products": "Jump rope",
+      "quantity": 1,
+      "img": "Img/CordeASaute.png",
+      "price": 10
     }
   ]
 }

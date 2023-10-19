@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitHome | SHOPPING CART</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Img/FitHomeBlue.png">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Img/FitHomeBlue.png" />
+  </head>
+  <body>
     <a href="index.html" class="h1-a">
-        <!-- <object data="Img/FitHomeOrange.svg" type="image/svg+xml" width="100px"></object> -->
-        <img src="Img/FitHomeOrange.svg" alt="Logo" width="75px">
-        <h1 class="h1-index">FITHOME</h1>
+      <!-- <object data="Img/FitHomeOrange.svg" type="image/svg+xml" width="100px"></object> -->
+      <img src="Img/FitHomeOrange.svg" alt="Logo" width="75px" />
+      <h1 class="h1-index">FITHOME</h1>
     </a>
     <header class="header-shop">
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="#">CONTACT US</a></li>
-                <li><a href="#"><img src="Img/user.png" alt="Login" width="20px" style="margin-right: 5px;">Login</a></li>
-                <li class="current-page"><a href="shoppingCart.html"><img src="Img/card.png" alt="Shopping cart" width="20px"></a></li>
-            </ul>
-        </nav>
-    </header>  
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li>
+            <a href="#"
+              ><img
+                src="Img/user.png"
+                alt="Login"
+                width="20px"
+                style="margin-right: 5px"
+              />Login</a
+            >
+          </li>
+          <li class="current-page">
+            <a href="shoppingCart.html"
+              ><img src="Img/card.png" alt="Shopping cart" width="20px"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-        <table cellspacing="0">
-            <thead>
-                <tr>
-                    <th colspan="2">Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody id="tbody"></tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3"></td>
-                    <td id="finalPrice"></td>
-                </tr>
-            </tfoot>
-        </table>
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th colspan="2">Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"></td>
+            <td id="finalPrice"></td>
+          </tr>
+        </tfoot>
+      </table>
 
-        <div>
-            <form action="/create-checkout-session" method="POST">
-            <a href="#" class="all-product">Pay</a>
-        </div>
+      <div>
+        <button class="all-product" id="all-product">Pay</button>
+      </div>
     </main>
 
     <script src="JavaScript/shoppingCart.js"></script>
-</body>
+  </body>
 </html>

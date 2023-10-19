@@ -326,3 +326,17 @@ th {
     margin-right: 0;
   }
 }
+
+button span a {
+  animation: grow 0.5s ease-in-out;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}

@@ -1,31 +1,52 @@
-const URL = "http://localhost:3000/SportsEquipment";
-fetch(URL).then(function(response){
-    return response.json();
-}).then(function(data){
-    console.log(data)
-    for(let i = 0; i < data.length; i++){
-        
-        if(i <= 5){
-            let newDiv = document.createElement("a")
-            newDiv.href = "shop.html"
-            newDiv.id = "Products"
+async function getProducts() {
+  const response = await fetch("http://localhost:3000/products");
+  return await response.json();
+}
 
-            let newProduct = document.createElement("p")
-            newProduct.innerText = data[i]["name_product"]
-            newProduct.className = "left-product"
-            let newPrice = document.createElement("p")
-            newPrice.innerText = data[i]["price"] + "€"
-            newPrice.className = "right-price"
-            let newImg = document.createElement("img")
-            newImg.src = data[i]["img"]
+async function addToCart(product, quantity = 1) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let productInCart = cart.find((item) => item.id === product.id);
+  if (productInCart) {
+    productInCart.quantity += quantity; // Add the specified quantity
+  } else {
+    productInCart = { ...product, quantity };
+    cart.push(productInCart);
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`Added ${quantity} ${quantity === 1 ? "item" : "items"} to cart`);
+}
 
-            newDiv.append(newImg)
-            newDiv.append(newProduct)
-            newDiv.append(newPrice)
+async function displayProductList() {
+  let list = document.getElementById("product-list");
+  try {
+    const products = await getProducts();
+    products.forEach((product) => {
+      let item = document.createElement("div");
+      item.innerHTML =
+        /* HTML */
+        `<div class="product-card">
+          <img
+            class="product-image"
+            src="${product.img}"
+            alt="${product.name_product}"
+          />
+          <h2 class="product-name">
+            <a href="product.html?id=${product.id}">${product.name_product}</a>
+          </h2>
+          <p class="product-price">$ ${product.price}</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>`;
+      list.appendChild(item);
 
-            document.getElementById("latest-products").append(newDiv)
+      // Add to cart button
+      let addToCartBtn = item.querySelector(".add-to-cart-btn");
+      addToCartBtn.addEventListener("click", () => {
+        addToCart(product);
+      });
+    });
+  } catch (error) {
+    list.innerHTML = `<p class="error">An error occurred fetching the products. Please check if the API is running.</p>`;
+  }
+}
 
-            console.log(newDiv)
-        }
-    }
-})
+displayProductList();
