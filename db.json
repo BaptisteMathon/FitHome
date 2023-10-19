@@ -57,35 +57,35 @@
       "stripe_price_id": "price_1O1l83Lum16Dv5coY4r6iN8O"
     },
     {
-      "id": 1,
+      "id": 9,
       "name_product": "Treadmill",
       "price": 900,
       "img": "Img/machine1.png",
       "stripe_price_id": "price_1O1l8eLum16Dv5coYJ4k3zPf"
     },
     {
-      "id": 2,
+      "id": 10,
       "name_product": "Exercise bike",
       "price": 500,
       "img": "Img/machine2.png",
       "stripe_price_id": "price_1O1l9RLum16Dv5coXmnGWYvV"
     },
     {
-      "id": 3,
+      "id": 11,
       "name_product": "Rowing machine",
       "price": 550,
       "img": "Img/machine3.png",
       "stripe_price_id": "price_1O1lAVLum16Dv5cou9z5Qlgr"
     },
     {
-      "id": 4,
+      "id": 12,
       "name_product": "Weightlifting ",
       "price": 1150,
       "img": "Img/machine4.png",
       "stripe_price_id": "price_1O1lB1Lum16Dv5coMf8VPTH2"
     },
     {
-      "id": 5,
+      "id": 13,
       "name_product": "Elliptical trainer",
       "price": 830,
       "img": "Img/machine5.png",
@@ -93,7 +93,7 @@
       "stripe_price_id": "price_1O1lF3Lum16Dv5coIdiod0wn"
     },
     {
-      "id": 6,
+      "id": 14,
       "name_product": "Smith machine",
       "price": 1100,
       "img": "Img/machine6.png",
@@ -101,7 +101,7 @@
       "stripe_price_id": "price_1O1lFULum16Dv5coGFhHPiy9"
     },
     {
-      "id": 7,
+      "id": 15,
       "name_product": "Step climber ",
       "price": 580,
       "img": "Img/machine7.png",
@@ -109,7 +109,7 @@
       "stripe_price_id": "price_1O1lH2Lum16Dv5coyUzDTYtQ"
     },
     {
-      "id": 8,
+      "id": 16,
       "name_product": "Cable crossover ",
       "price": 2200,
       "img": "Img/machine8.png",
@@ -120,38 +120,19 @@
   "Card": [
     {
       "id": 1,
-      "products": "Jump rope",
-      "quantity": 3,
-      "img": "Img/CordeASaute.png",
-      "price": 10
+      "products": "Fitness ball",
+      "quantity": 1,
+      "img": "Img/ballonFit.png",
+      "price": 20,
+      "stripe_price_id": "price_1O0h7dLum16Dv5co1Q9s0FRQ"
     },
     {
       "id": 2,
-      "products": "Bicycle helmet",
-      "quantity": 2,
-      "img": "Img/casque.png",
-      "price": 35
-    },
-    {
-      "id": 3,
-      "products": "Step climber machine",
-      "quantity": 2,
-      "img": "Img/machine7.png",
-      "price": 580
-    },
-    {
-      "id": 4,
-      "products": "Dumbbells",
-      "quantity": 1,
-      "img": "Img/haltere.png",
-      "price": 35
-    },
-    {
-      "id": 5,
       "products": "Jump rope",
       "quantity": 1,
       "img": "Img/CordeASaute.png",
-      "price": 10
+      "price": 10,
+      "stripe_price_id": "price_1O0h81Lum16Dv5coA6SQOton"
     }
   ]
 }

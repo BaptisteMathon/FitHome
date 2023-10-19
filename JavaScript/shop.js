@@ -24,13 +24,27 @@ fetch(URL)
       newButton.id = `AddCard${i}`;
       newButton.setAttribute(
         "onclick",
-        `AddCard("${data[i]["name_product"]}", "${data[i]["img"]}", "${data[i]["price"]}")`
+        `AddCard("${data[i]["name_product"]}", "${data[i]["img"]}", "${data[i]["price"]}", "${data[i]["stripe_price_id"]}")`
       );
 
       newDiv.append(newImg);
       newDiv.append(newProduct);
       newDiv.append(newPrice);
-      newDiv.append(newButton);
+
+      fetch("http://localhost:3000/Card").then(function(response2){
+            return response2.json();
+        }).then(function(data2){
+            console.log(data2)
+            let count = 0
+            for(let j = 0; j < data2.length; j++){
+                if(data2[j]["products"] == data[i]["name_product"]){
+                    count = 1
+                }
+            }
+            if(count == 0){
+                newDiv.append(newButton)
+            }
+        })
 
       document.getElementById("our-products").append(newDiv);
 
@@ -38,20 +52,21 @@ fetch(URL)
     }
   });
 
-function AddCard(name, img, price) {
-  fetch("http://localhost:3000/Card", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      id: 0,
-      products: name,
-      quantity: 1,
-      img: img,
-      price: parseInt(price),
-    }),
-  })
-    .then(function (response) {})
-    .then(function (data) {
-      // location.reload()
-    });
-}
+  function AddCard(name, img, price, stripe) {
+    fetch("http://localhost:3000/Card", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        id: 0,
+        products: name,
+        quantity: 1,
+        img: img,
+        price: parseInt(price),
+        stripe_price_id: stripe
+      }),
+    })
+      .then(function (response) {})
+      .then(function (data) {
+        // location.reload()
+      });
+  }
