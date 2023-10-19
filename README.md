@@ -10,13 +10,14 @@ We sell sport products, to allow people to substract travel time instead going t
 $ git clone https://github.com/BaptisteMathon/LXP_Barcelone.git
 ```
 #### 2 - Install node.js (https://nodejs.org/en/download)
+In the 'webtech-payment-service' repository:
 ```
 $ npm install
 $ npm start
 ```
 
 #### 3 - Start the database
+In the db.json repository:
 ```
-$ cd ./  (PATH to the database repository)
 $ json-server --watch db.json
 ```
