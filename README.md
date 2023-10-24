@@ -19,5 +19,6 @@ $ npm start
 #### 3 - Start the database
 In the db.json repository:
 ```
+$ npm install -g json-server
 $ json-server --watch db.json
 ```
